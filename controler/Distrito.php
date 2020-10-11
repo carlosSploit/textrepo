@@ -3,21 +3,12 @@
 switch (isset($_POST['action'])) {
     
     case "insert" : 
-        $dist = new Distrito($_POST['Departamento'],$_POST['Ciudad'],$_POST['Distrito']);
-        $dist->insertar($uss);
         break;
-    
     case "eliminar" : 
-        $dist = Distrito("","","");
-        $dist->eliminar($var);
         break;
     case "listar" : 
-        $dist = Distrito("","","");
-        $dist->listar($var);
         break;
     case "update" : 
-        $dist = Distrito("","","");
-        $dist->update($var);
         break;
     default:
         break;

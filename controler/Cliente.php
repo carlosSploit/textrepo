@@ -7,22 +7,17 @@ de coloca incluido en la capa cpntrolador */
 switch (isset($_POST['action'])) {
     
     case "insert" : 
-        $uss = new Cliente($_POST['dni'],$_POST['nombre'],$_POST['correro'],$_POST['telefono'],$_POST['foto'],$_POST['User'],$_POST['Pass']);
-        $uss->insertar($uss);
         break;
     
     case "eliminar" : 
-        $uss = new Cliente("",0,"",0,"","",0);
-        $uss->eliminar($var);
         break;
+
     case "listar" : 
-        $uss = new Cliente("",0,"",0,"","",0);
-        $uss->listar($var);
         break;
+
     case "update" : 
-        $uss = new Cliente("",0,"",0,"","",0);
-        $uss->update($var);
         break;
+        
     default:
         break;
 }
