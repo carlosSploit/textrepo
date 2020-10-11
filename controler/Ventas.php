@@ -9,21 +9,13 @@
 switch (isset($_POST['action'])) {
     
     case "insert" : 
-        $vent = new Venta($_POST['IdVenta'],$_POST['montoTotal'],$_POST['FechaVenta']);
-        $vent->insertar($uss);
         break;
     
     case "eliminar" : 
-        $vent = new Venta("","","");
-        $vent->eliminar($var);
         break;
     case "listar" : 
-        $vent = new Venta("","","");
-        $vent->listar($var);
         break;
     case "update" : 
-        $vent = new Venta("","","");
-        $vent->update($var);
         break;
     default:
         break;
